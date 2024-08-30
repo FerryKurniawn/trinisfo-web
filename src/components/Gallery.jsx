@@ -51,8 +51,8 @@ function Gallery() {
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-80 object-cover rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
-                  style={{ height: "700px" }} // Adjust height as needed
+                  className="w-full object-cover rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
+                  style={{ height: "60vh" }} // Adjust height to a percentage of viewport height
                 />
               </div>
             ))}
