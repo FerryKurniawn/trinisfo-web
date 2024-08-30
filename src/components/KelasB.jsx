@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import imageKelasB from "/data/img/kelas_b.json";
+import kelasB from "/src/public/img/kelas-b.js"; // Adjust the import path
 
 export default function KelasB() {
   useEffect(() => {
@@ -22,23 +22,23 @@ export default function KelasB() {
           </p>
         </div>
         <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 lg:gap-8">
-          {imageKelasB.map((image, index) => (
+          {kelasB.map((student, index) => (
             <div
               key={index}
               className="relative group w-full h-96 overflow-hidden rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105"
             >
               <img
-                src={image.src}
-                alt={`NIM ${image.nim}`}
+                src={student.src}
+                alt={`NIM ${student.nim}`}
                 className="w-full h-full object-cover text-center flex"
               />
               <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="text-lg font-semibold text-white mb-2 text-center">
-                  {image.name}
+                  {student.name}
                 </div>
-                <div className="text-md text-white mb-2">{image.nim}</div>
+                <div className="text-md text-white mb-2">{student.nim}</div>
                 <div className="text-md text-white italic text-center">
-                  "{image.quotes}"
+                  "{student.quotes}"
                 </div>
               </div>
             </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import logo from "/src/public/img/Typograph@2x.png";
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -53,11 +54,7 @@ export default function Navbar() {
           className="flex items-center space-x-3 rtl:space-x-reverse"
           onClick={handleHomeClick}
         >
-          <img
-            src="/src/public/img/Typograph@2x.png"
-            alt="Logo"
-            className="lg:p-2 lg:w-[130px] w-28"
-          />
+          <img src={logo} alt="Logo" className="lg:p-2 lg:w-[130px] w-28" />
         </a>
 
         <button
