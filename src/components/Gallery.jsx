@@ -10,8 +10,8 @@ import img6 from "/src/public/img/angkatan/img6.jpg";
 import img7 from "/src/public/img/angkatan/img-7.jpg";
 import img8 from "/src/public/img/angkatan/img-9.jpg";
 import img9 from "/src/public/img/angkatan/batik.jpg";
+import "../styles/animation.css";
 
-// Slider settings
 const sliderSettings = {
   dots: true,
   infinite: true,
@@ -47,12 +47,12 @@ function Gallery() {
         <div className="relative">
           <Slider {...sliderSettings}>
             {images.map((image, index) => (
-              <div key={index} className="relative">
+              <div key={index} className="relative animate-slideIn">
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="w-full object-cover rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
-                  style={{ height: "60vh" }} // Adjust height to a percentage of viewport height
+                  className="w-full object-cover rounded-lg shadow-lg transition-transform duration-300 hover:scale-110"
+                  style={{ height: "60vh" }}
                 />
               </div>
             ))}
