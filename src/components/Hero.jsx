@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/animation.css";
-
+import logo from "/src/public/img/Logo.png";
 function Hero() {
   return (
     <section id="home" className="p-12 md:p-24 lg:p-36 bg-gray-50">
@@ -32,11 +32,7 @@ function Hero() {
             </div>
           </div>
           <div className="w-full md:w-1/2 flex justify-center md:justify-end p-4 animate-fadeInUp">
-            <img
-              src="/src/public/img/Logo.png"
-              alt="Logo"
-              className="max-w-full h-auto"
-            />
+            <img src={logo} alt="Logo" className="max-w-full h-auto" />
           </div>
         </div>
       </div>

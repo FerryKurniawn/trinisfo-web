@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import kelasa from "/src/public/img/angkatan/kelasa.jpg";
+import kelasb from "/src/public/img/angkatan/kelasb.jpg";
 
 function Students() {
   const navigate = useNavigate();
@@ -39,7 +41,7 @@ function Students() {
           <div className="flex flex-col items-center w-full lg:w-1/2">
             <div className="relative w-full h-[300px] lg:h-[400px] overflow-hidden rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105">
               <img
-                src="/src/public/img//angkatan/kelasa.jpg"
+                src={kelasa}
                 alt="Kelas A"
                 className="w-full h-full object-cover"
               />
@@ -57,7 +59,7 @@ function Students() {
           <div className="flex flex-col items-center w-full lg:w-1/2">
             <div className="relative w-full h-[300px] lg:h-[400px] overflow-hidden rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105">
               <img
-                src="/src/public/img/angkatan/kelasb.jpg"
+                src={kelasb}
                 alt="Kelas B"
                 className="w-full h-full object-cover"
               />

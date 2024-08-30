@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/animation.css";
+import about from "/src/public/img/about.png";
 
 function About() {
   const navigate = useNavigate();
@@ -24,7 +25,7 @@ function About() {
         <div className="flex flex-col md:flex-row items-center animate-fadeInUp">
           <div className="w-full md:w-1/2 flex justify-center items-center md:justify-start mb-8 md:mb-0">
             <img
-              src="/src/public/img/about.png"
+              src={about}
               alt="Descriptive Alt Text"
               className="max-w-full h-auto rounded-lg shadow-lg transition-transform transform hover:scale-105"
             />
