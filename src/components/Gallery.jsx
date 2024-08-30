@@ -27,35 +27,35 @@ function Gallery() {
           <Slider {...sliderSettings}>
             {[
               {
-                src: "/src/assets/img/angkatan/img1.png",
+                src: "/src/public/img/angkatan/img1.png",
                 alt: "Gallery Image 1",
               },
               {
-                src: "/src/assets/img/angkatan/img2.png",
+                src: "/src/public/img/angkatan/img2.png",
                 alt: "Gallery Image 2",
               },
               {
-                src: "/src/assets/img/angkatan/img3.png",
+                src: "/src/public/img/angkatan/img3.png",
                 alt: "Gallery Image 3",
               },
               {
-                src: "/src/assets/img/angkatan/img4.jpg",
+                src: "/src/public/img/angkatan/img4.jpg",
                 alt: "Gallery Image 4",
               },
               {
-                src: "/src/assets/img/angkatan/img5.jpg",
+                src: "/src/public/img/angkatan/img5.jpg",
                 alt: "Gallery Image 5",
               },
               {
-                src: "/src/assets/img/angkatan/img6.jpg",
+                src: "/src/public/img/angkatan/img6.jpg",
                 alt: "Gallery Image 6",
               },
               {
-                src: "/src/assets/img/angkatan/img-7.jpg",
+                src: "/src/public/img/angkatan/img-7.jpg",
                 alt: "Gallery Image 7",
               },
               {
-                src: "/src/assets/img/angkatan/img-9.jpg",
+                src: "/src/public/img/angkatan/img-9.jpg",
                 alt: "Gallery Image 9",
               },
             ].map((image, index) => (

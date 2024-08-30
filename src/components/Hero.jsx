@@ -33,7 +33,7 @@ function Hero() {
           </div>
           <div className="w-full md:w-1/2 flex justify-center md:justify-end p-4 animate-fadeInUp">
             <img
-              src="/src/assets/img/Logo.png"
+              src="/src/public/img/Logo.png"
               alt="Logo"
               className="max-w-full h-auto"
             />

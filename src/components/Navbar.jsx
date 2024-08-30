@@ -54,7 +54,7 @@ export default function Navbar() {
           onClick={handleHomeClick}
         >
           <img
-            src="/src/assets/img/Typograph@2x.png"
+            src="/src/public/img/Typograph@2x.png"
             alt="Logo"
             className="lg:p-2 lg:w-[130px] w-28"
           />

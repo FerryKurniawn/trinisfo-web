@@ -39,7 +39,7 @@ function Students() {
           <div className="flex flex-col items-center w-full lg:w-1/2">
             <div className="relative w-full h-[300px] lg:h-[400px] overflow-hidden rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105">
               <img
-                src="/src/assets/img//angkatan/kelasa.jpg"
+                src="/src/public/img//angkatan/kelasa.jpg"
                 alt="Kelas A"
                 className="w-full h-full object-cover"
               />
@@ -57,7 +57,7 @@ function Students() {
           <div className="flex flex-col items-center w-full lg:w-1/2">
             <div className="relative w-full h-[300px] lg:h-[400px] overflow-hidden rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105">
               <img
-                src="/src/assets/img/angkatan/kelasb.jpg"
+                src="/src/public/img/angkatan/kelasb.jpg"
                 alt="Kelas B"
                 className="w-full h-full object-cover"
               />

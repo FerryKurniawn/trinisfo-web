@@ -24,7 +24,7 @@ function About() {
         <div className="flex flex-col md:flex-row items-center animate-fadeInUp">
           <div className="w-full md:w-1/2 flex justify-center items-center md:justify-start mb-8 md:mb-0">
             <img
-              src="/src/assets/img/about.png"
+              src="/src/public/img/about.png"
               alt="Descriptive Alt Text"
               className="max-w-full h-auto rounded-lg shadow-lg transition-transform transform hover:scale-105"
             />
