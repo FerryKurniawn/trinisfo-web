@@ -19,8 +19,8 @@ const sliderSettings = {
   fade: true,
   slidesToShow: 1,
   slidesToScroll: 1,
-  prevArrow: <PrevArrow />,
-  nextArrow: <NextArrow />,
+  prevArrow: <PrevArrow className="carousel-arrow" />,
+  nextArrow: <NextArrow className="carousel-arrow" />,
 };
 
 function Gallery() {
@@ -44,7 +44,7 @@ function Gallery() {
             Gallery Kami
           </h1>
         </div>
-        <div className="relative">
+        <div className="relative carousel-container">
           <Slider {...sliderSettings}>
             {images.map((image, index) => (
               <div key={index} className="relative animate-slideIn">

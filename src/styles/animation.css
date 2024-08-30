@@ -61,3 +61,35 @@
 .animate-slideIn {
   animation: slideIn 1s ease-out;
 }
+
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
+
+.animate-fadeInSlideUp {
+  animation: fadeInSlideUp 0.5s ease-out;
+}
+
+.navbar {
+  z-index: 50;
+}
+
+.carousel-container {
+  position: relative;
+  z-index: 10;
+}
+
+.carousel-arrow {
+  z-index: 20;
+}

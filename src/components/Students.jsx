@@ -25,9 +25,9 @@ function Students() {
   }, []);
 
   return (
-    <section className="py-12 lg:py-24 bg-gray-100 min-h-screen">
+    <section id="students" className="py-12 lg:py-24 bg-gray-100 min-h-screen">
       <div className="container mx-auto px-4 text-center">
-        <div className="students-header mb-12 lg:mb-16 mt-10">
+        <div className="students-header mb-12 lg:mb-16 mt-16">
           <h1 className="text-4xl lg:text-5xl font-extrabold text-primary mb-4">
             Mahasiswa Angkatan 2023
           </h1>

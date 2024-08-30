@@ -13,7 +13,7 @@ export default function KelasB() {
   return (
     <section className="py-12 lg:py-24 bg-gray-100 min-h-screen">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 mt-12">
           <h1 className="text-3xl lg:text-4xl font-extrabold text-primary mb-4">
             Mahasiswa Kelas B
           </h1>

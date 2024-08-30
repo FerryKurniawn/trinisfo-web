@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import logo from "/src/public/img/Typograph@2x.png";
 import cat from "/src/public/img/pow.png";
+import "../styles/animation.css";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,7 +47,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-white fixed w-full z-20 top-0 left-0 shadow-xl">
+    <nav className="navbar bg-white fixed w-full z-50 top-0 left-0 shadow-xl animate-fadeInSlideUp">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a
           href="#"
@@ -84,7 +85,7 @@ export default function Navbar() {
         )}
 
         <div
-          className={`fixed top-0 right-0 w-3/5 h-full bg-white shadow-lg transition-transform duration-300 ease-in-out md:hidden ${
+          className={`fixed top-0 right-0 w-4/5 md:w-3/5 h-full bg-white shadow-lg transition-transform duration-300 ease-in-out md:hidden ${
             isOpen ? "translate-x-0" : "translate-x-full"
           }`}
           id="navbar-sticky"
@@ -115,7 +116,7 @@ export default function Navbar() {
           <ul className="flex flex-col items-center p-6 mt-10 font-medium space-y-6">
             <li>
               <a
-                href="#hero"
+                href="#home"
                 className="text-primary text-2xl font-bold hover:text-primary-dark transition-colors duration-300 relative group pb-1"
                 onClick={handleHomeClick}
               >
@@ -157,9 +158,14 @@ export default function Navbar() {
           <div className="flex justify-center p-4">
             <img
               src={cat}
-              alt="ini kucing"
-              className="transition-transform duration-300 hover:scale-105"
+              alt="Ini Kucing"
+              className="transition-transform duration-300 hover:scale-110"
             />
+          </div>
+          <div className="text-center mt-4">
+            <h1 className="text-lg font-semibold text-gray-700">
+              // xinxixitong VENTITRÉ //
+            </h1>
           </div>
         </div>
 
@@ -167,7 +173,7 @@ export default function Navbar() {
           <ul className="flex space-x-8 font-medium">
             <li>
               <a
-                href="#hero"
+                href="#home"
                 className="relative text-primary text-lg font-bold hover:text-primary-dark transition-colors duration-300 group pb-1"
                 onClick={handleHomeClick}
               >

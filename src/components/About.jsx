@@ -16,7 +16,7 @@ function About() {
 
   const handleStudentsClick = (e) => {
     e.preventDefault();
-    navigate("/students");
+    navigate("/students#");
   };
 
   useEffect(() => {
